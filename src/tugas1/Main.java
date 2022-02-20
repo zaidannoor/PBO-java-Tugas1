@@ -24,7 +24,7 @@ public class Main {
         System.out.print("Suhu dalam celcius : ");
         suhu = input.nextFloat();
          
-        Benda benda1 = new Benda(suhu);
+        Benda air = new Benda(suhu);
         
         while(true){
             System.out.println("\nOpsi");
@@ -36,14 +36,14 @@ public class Main {
             
             if(pilih == 1){
                 System.out.println("");
-                benda1.konversi();
+                air.konversi();
             }
             else if(pilih == 2){
                 System.out.println("\nInput data");
                 System.out.println("----------");
                 System.out.print("Suhu dalam celcius : ");
                 suhu = input.nextFloat();
-                benda1.EditData(suhu);
+                air.EditData(suhu);
             }
             else if(pilih == 3){
                 break;
